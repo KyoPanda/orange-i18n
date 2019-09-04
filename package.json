@@ -1,0 +1,43 @@
+{
+  "name": "orange-i18n",
+  "version": "1.0.0",
+  "description": "A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages. ",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha --require @babel/register",
+    "build": "webpack --config webpack.config.js",
+    "docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyoPanda/orange-i18n.git"
+  },
+  "keywords": [
+    "fantasy",
+    "farming",
+    "orange",
+    "season",
+    "rpg",
+    "maker",
+    "rpgmaker"
+  ],
+  "author": "Kyo Panda <kyo-panda@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KyoPanda/orange-i18n/issues"
+  },
+  "homepage": "https://github.com/KyoPanda/orange-i18n#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "chai": "^4.2.0",
+    "jsdoc": "^3.6.3",
+    "mocha": "^6.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/register": "^7.5.5"
+  }
+}
