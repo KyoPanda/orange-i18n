@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import bar from '../src/bar';
+import bar from '../../src/bar';
 
 describe('bar', function () {
 	it('it should return bar', function () {

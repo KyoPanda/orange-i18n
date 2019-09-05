@@ -1,11 +1,11 @@
 {
   "name": "orange-i18n",
   "version": "1.0.0",
-  "description": "A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages. ",
+  "description": "A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages.",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "mocha --require @babel/register",
+    "test": "npx ./test/setup.js",
     "build": "webpack --config webpack.config.js",
     "docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
   },
@@ -33,6 +33,7 @@
     "chai": "^4.2.0",
     "jsdoc": "^3.6.3",
     "mocha": "^6.2.0",
+    "nw": "^0.33.3",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   },
