@@ -1,2 +1,2 @@
-export { default as bar } from './bar';
-export { default as Window_Test } from './Window_Test';
+export { default as GettextFormatter } from './formatters/GettextFormatter';
+export { default as JsonFormatter } from './formatters/JsonFormatter';

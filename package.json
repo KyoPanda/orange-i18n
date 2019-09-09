@@ -7,7 +7,7 @@
   "scripts": {
     "test": "NODE_PATH=./src mocha --require @babel/register --require ./test/setup.js ./test/specs",
     "build": "webpack --config webpack.config.js",
-    "docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
+    "build-docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
   },
   "repository": {
     "type": "git",
