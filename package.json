@@ -7,7 +7,7 @@
   "scripts": {
     "test": "NODE_PATH=./src mocha --require @babel/register --require ./test/setup.js ./test/specs",
     "build": "webpack --config webpack.config.js",
-    "build-docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
+    "generate-docs": "./node_modules/jsdoc-to-markdown/bin/cli.js --template ./README.hbs -c ./jsdoc.config.json --files ./src/**/*.js > README.md; echo"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
     "chai": "^4.2.0",
-    "jsdoc": "^3.6.3",
+    "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
