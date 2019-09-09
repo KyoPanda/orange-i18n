@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "npx ./test/setup.js",
+    "test": "mocha --require @babel/register ./test",
     "build": "webpack --config webpack.config.js",
     "docs": "./node_modules/jsdoc/jsdoc.js -c ./jsdoc.config.json"
   },
@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
-    "@babel/register": "^7.5.5"
+    "@babel/register": "^7.5.5",
+    "babel-loader": "^8.0.6"
   }
 }
