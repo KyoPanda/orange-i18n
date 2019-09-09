@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { bar, Window_Test } from '../src/index';
+import { bar, Window_Test } from 'index';
 
 describe('bar', function () {
 	it('it should return bar', function () {
