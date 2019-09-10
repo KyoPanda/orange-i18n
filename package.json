@@ -5,9 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "NODE_PATH=./src mocha --require @babel/register --require ./test/setup.js ./test/specs",
+		"lint": "eslint ./src/**/*.js",
     "build": "webpack --config webpack.config.js",
-    "generate-docs": "./node_modules/jsdoc-to-markdown/bin/cli.js --template ./README.hbs -c ./jsdoc.config.json --files ./src/**/*.js > README.md; echo"
+    "test": "NODE_PATH=./src nyc mocha --require @babel/register --require ./test/setup.js ./test/specs",
+    "generate-docs": "jsdoc2md --template ./README.hbs -c ./jsdoc.config.json --files ./src/**/*.js > README.md; echo"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "eslint-plugin-import": "^2.18.2",
     "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   },

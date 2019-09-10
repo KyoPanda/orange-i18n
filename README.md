@@ -49,7 +49,7 @@ Encode the translation data to the gettext format.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| data | <code>Object.&lt;string, string&gt;</code> | A list with source and target for each translation as key and value. |
+| data | <code>Object.&lt;string, string&gt;</code> | A list with source and target for each translation as     key and value. |
 
 <a name="GettextFormatter.decode"></a>
 
@@ -57,7 +57,8 @@ Encode the translation data to the gettext format.
 Decode the translation data in the gettext format.
 
 **Kind**: static method of [<code>GettextFormatter</code>](#GettextFormatter)  
-**Returns**: <code>Object.&lt;string, string&gt;</code> - An object with source and target translations as key and value.  
+**Returns**: <code>Object.&lt;string, string&gt;</code> - An object with source and target translations as key and
+    value.  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -97,7 +98,7 @@ Encode the translation data to the JSON format.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| data | <code>Object.&lt;string, string&gt;</code> | A list with source and target for each translation as key and value. |
+| data | <code>Object.&lt;string, string&gt;</code> | A list with source and target for each translation as     key and value. |
 
 <a name="JsonFormatter.decode"></a>
 
@@ -105,7 +106,8 @@ Encode the translation data to the JSON format.
 Decode the translation data in the JSON format.
 
 **Kind**: static method of [<code>JsonFormatter</code>](#JsonFormatter)  
-**Returns**: <code>Object.&lt;string, string&gt;</code> - An object with source and target translations as key and value.  
+**Returns**: <code>Object.&lt;string, string&gt;</code> - An object with source and target translations as key and
+    value.  
 
 | Param | Type | Description |
 | --- | --- | --- |
