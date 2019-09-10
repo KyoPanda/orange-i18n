@@ -6,6 +6,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/KyoPanda/orange-i18n)](https://github.com/KyoPanda/orange-i18n/issues)
 [![License: MIT](https://img.shields.io/github/license/KyoPanda/orange-i18n)](https://opensource.org/licenses/MIT)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KyoPanda/orange-i18n.svg)](https://greenkeeper.io/)
+
 A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages.
 
 ## API Reference
