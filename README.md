@@ -1,4 +1,6 @@
 # Orange I18N
+[![Build Status](https://travis-ci.org/KyoPanda/orange-i18n.svg?branch=master)](https://travis-ci.org/KyoPanda/orange-i18n)
+[![codecov](https://codecov.io/gh/KyoPanda/orange-i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/KyoPanda/orange-i18n)
 
 A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages.
 

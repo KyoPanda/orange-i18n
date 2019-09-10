@@ -1,13 +1,12 @@
 language: node_js
-install:
-  - npm install -g codecov
-  - npm install
+addons:
+  code_climate:
+    repo_token: "GPIIRtJEsyt+rAtQstk5Qbh18FA3A73fTPWMWIKlU/Fdql+/7EIXfsrY92Heh5++c9YAc8enWFPfX212y1Xx/+srhi1uigBddM1lxqS94cDDka4zT522BRC6y3I0iI0cvi5IE5XFnVXsYKiysqNs46vqvx28zruVs12+Z0jfGoo3b3W2RDrBDDjLD7m13O2ANWk5xyEzrETJ0gh3/6HVFH1CicJuwe3DixwiRkffBJ9FPY7Cje2AxeIOnJ/Sua3jW8s30QgjPp6Ev2iGfAfZ72dBKj0619XTZ2v8U570H/A0uvY+Tnl/xepMrfzU1yhzt+oK93NU/KZmKmnAOdetwAb2QOyuaVkwGvRoXX4k+I/fiZXRD6z0cIvKTg1EKx+WO6grsX3W6qx1guuWR4D2LckyS37ZomZi2+DDIRsk/YwUBmgGUOcs7QCpLxWuxidqd4j3ZtfKKY/6C9x+/55u5xDYp2TslS/fhP9JNvN9Ohd76yb/DUbsnBC1a/jy4Rl4LJ1dWzuAQjb0NL2fQ6N+FUtIg1KPmI2Mk/HEOuEOcUqHz36n99JRFkCU2HwStLjugqx6aVTUeJOm2HS0VNjQIQPG0Cp2WKdovgNDFIlszwySLwkT9oQ+s9QKtd1WzBUKGDNZBBJE1sFs8qBa8/L+g+JedDchwGQHuFZ8pC0pLkc="
+before_script:
+  - npm install -g codeclimate-test-reporter
 script:
   - npm run lint
   - npm run build
   - npm test
-after_success:
-  - npm run coverage
-env:
-  matrix:
-    secure: JoD0jQlskoVZtgKad2+WvHprb5Larhj4oodZEuSsvjGYt3FLhNufwyFVbdHq9UWHXZc9uKfCdfbI/Dw5AOZxGcmL6XIy9KTd9OBnjTRUV2VEbPbCLcHYZdIMHNwgdKR12Oi1KMqYNAwF9VCsbXtmucrO4PgmoWHdUbn41j2bVI+s+F9DlBzUlSjD0u32BYELANYsG7/eE9aL7e2z82hJJHv40E3RCf5lGPeNMxMDJrAU2nOv8KPUYpiYBcxLKHFs879rs24nbXFh2nPF9FOh0pGoK878oUu4WIAmoo8Cmr1JWEq5rInk4KsRrZ+vPZ4CjdWX4Wt+bwal8PGMsOei2Jg9U4qHucsYSAo3eVeDNT9mIiP3fWnDv5koAxzrOc40ox89jN7THn0HE0w9doGfGCsIwZVqeuLjt8LaGXcaWioWRvwiECNRmxD13H4d+vjx/tct7m3dYLn9KYPAFPq8WnydR6ihAyJ7nKh3xZrwWbkIKLU/YkEmelOfVWKba5lfnKnhWsFwX+rPv6vo1AWdXiFnXjwWeE7UAyshqDN3dPuX4pwlN/HWaEqgoC1/C2alUXwu6libzVxj7cN7MIkEAbiO1HyGoRhzk3XIRRikL2Qs/ngHWzLvItkhiiNEc369l98qujtuULqhUhqoZK3O5UjoOQyxfUM0EN7nwOdE1Uo=
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
