@@ -7,7 +7,8 @@
   "scripts": {
 		"lint": "eslint ./src/**/*.js",
     "build": "webpack --config webpack.config.js",
-    "test": "NODE_PATH=./src nyc mocha --require @babel/register --require ./test/setup.js ./test/specs",
+		"test": "NODE_PATH=./src nyc --reporter=lcov mocha --require @babel/register --require ./test/setup.js ./test/specs",
+		"coverage": "codecov",
     "generate-docs": "jsdoc2md --template ./README.hbs -c ./jsdoc.config.json --files ./src/**/*.js > README.md; echo"
   },
   "repository": {
