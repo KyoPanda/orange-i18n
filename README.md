@@ -1,5 +1,7 @@
 # Orange I18N
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KyoPanda/orange-i18n.svg)](https://greenkeeper.io/)
+
 A Fantasy Farming: Orange Season's mod to allow the translation of the game to other languages.
 
 ## API Reference
