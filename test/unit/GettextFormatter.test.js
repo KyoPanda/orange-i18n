@@ -30,7 +30,7 @@ describe('GettextFormatter', function () {
 	});
 
 	describe('#decode()', function () {
-		it('should properly decode and gettext string to an object', function () {
+		it('should properly decode a gettext string to an object', function () {
 			const data = GettextFormatter.decode([
 				'msgid ""',
 				'msgstr ""',

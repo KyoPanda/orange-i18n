@@ -28,7 +28,7 @@ describe('JsonFormatter', function () {
 	});
 
 	describe('#decode()', function () {
-		it('should properly decode and JSON string to an object', function () {
+		it('should properly decode a JSON string to an object', function () {
 			const data = JsonFormatter.decode('{"Hello, world!":"Olá, mundo!","Escape \\"":"Escapar \\""}');
 
 			expect(data).to.be.an('object');
