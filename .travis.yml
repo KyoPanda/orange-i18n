@@ -4,10 +4,10 @@ addons:
     repo_token:
       secure: "GPIIRtJEsyt+rAtQstk5Qbh18FA3A73fTPWMWIKlU/Fdql+/7EIXfsrY92Heh5++c9YAc8enWFPfX212y1Xx/+srhi1uigBddM1lxqS94cDDka4zT522BRC6y3I0iI0cvi5IE5XFnVXsYKiysqNs46vqvx28zruVs12+Z0jfGoo3b3W2RDrBDDjLD7m13O2ANWk5xyEzrETJ0gh3/6HVFH1CicJuwe3DixwiRkffBJ9FPY7Cje2AxeIOnJ/Sua3jW8s30QgjPp6Ev2iGfAfZ72dBKj0619XTZ2v8U570H/A0uvY+Tnl/xepMrfzU1yhzt+oK93NU/KZmKmnAOdetwAb2QOyuaVkwGvRoXX4k+I/fiZXRD6z0cIvKTg1EKx+WO6grsX3W6qx1guuWR4D2LckyS37ZomZi2+DDIRsk/YwUBmgGUOcs7QCpLxWuxidqd4j3ZtfKKY/6C9x+/55u5xDYp2TslS/fhP9JNvN9Ohd76yb/DUbsnBC1a/jy4Rl4LJ1dWzuAQjb0NL2fQ6N+FUtIg1KPmI2Mk/HEOuEOcUqHz36n99JRFkCU2HwStLjugqx6aVTUeJOm2HS0VNjQIQPG0Cp2WKdovgNDFIlszwySLwkT9oQ+s9QKtd1WzBUKGDNZBBJE1sFs8qBa8/L+g+JedDchwGQHuFZ8pC0pLkc="
 before_script:
-  - npm install -g codeclimate-test-reporter
+  - npm install -g codeclimate-test-reporter || travis_terminate 1
 script:
-  - npm run lint
-  - npm run build
-  - npm test
+  - npm run lint || travis_terminate 1
+  - npm run build || travis_terminate 1
+  - npm test || travis_terminate 1
 after_script:
-  - codeclimate-test-reporter < ./coverage/lcov.info
+  - codeclimate-test-reporter < ./coverage/lcov.info || travis_terminate 1
