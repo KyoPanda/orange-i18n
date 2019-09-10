@@ -5,9 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-		"lint": "eslint ./src/**/*.js",
+    "lint": "eslint ./src/**/*.js",
     "build": "webpack --config webpack.config.js",
-		"test": "NODE_PATH=./src nyc --reporter=lcov mocha --require @babel/register --require ./test/unit/setup.js ./test/unit/",
+    "test": "NODE_PATH=./src nyc --reporter=lcov mocha --require @babel/register --require ./test/unit/setup.js ./test/unit/",
     "generate-docs": "jsdoc2md --template ./README.hbs -c ./jsdoc.config.json --files ./src/**/*.js > README.md; echo"
   },
   "repository": {
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
     "chai": "^4.2.0",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
@@ -45,5 +46,10 @@
     "@babel/core": "^7.5.5",
     "@babel/register": "^7.5.5",
     "babel-loader": "^8.0.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
