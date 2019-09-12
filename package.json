@@ -32,12 +32,15 @@
   "homepage": "https://github.com/KyoPanda/orange-i18n#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "chai": "^4.2.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.5",
     "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
@@ -55,13 +58,21 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-	"release": {
-		"plugins": [
+  "release": {
+    "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-			["@semantic-release/github", {
-				"assets": []
-			}]
-		]
-	}
+      [
+        "@semantic-release/github",
+        {
+          "assets": []
+        }
+      ]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }  
+  }
 }
