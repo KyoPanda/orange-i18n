@@ -31,9 +31,10 @@
   },
   "homepage": "https://github.com/KyoPanda/orange-i18n#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/travis-cli": "^8.1.0",
     "chai": "^4.2.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
@@ -46,13 +47,12 @@
     "nyc": "^14.1.1",
     "semantic-release": "^15.13.24",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
-  },
-  "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/register": "^7.5.5",
+    "webpack-cli": "^3.3.8",
+    "@babel/core": "^7.6.0",
+    "@babel/register": "^7.6.0",
     "babel-loader": "^8.0.6"
   },
+  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -73,6 +73,6 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }  
+    }
   }
 }
