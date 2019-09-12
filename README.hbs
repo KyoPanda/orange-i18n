@@ -3,6 +3,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3fdb98b128b2c457cb94/maintainability)](https://codeclimate.com/github/KyoPanda/orange-i18n/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3fdb98b128b2c457cb94/test_coverage)](https://codeclimate.com/github/KyoPanda/orange-i18n/test_coverage)
 [![Greenkeeper badge](https://badges.greenkeeper.io/KyoPanda/orange-i18n.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://img.shields.io/david/KyoPanda/orange-i18n)](https://david-dm.org/KyoPanda/orange-i18n/master)
+[![devDependencies Status](https://img.shields.io/david/dev/KyoPanda/orange-i18n)](https://david-dm.org/KyoPanda/orange-i18n/master?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/KyoPanda/orange-i18n)](https://github.com/KyoPanda/orange-i18n/issues)
 [![License: MIT](https://img.shields.io/github/license/KyoPanda/orange-i18n)](https://opensource.org/licenses/MIT)
 
