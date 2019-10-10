@@ -49,7 +49,7 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "@babel/core": "^7.6.4",
-    "@babel/register": "^7.6.0",
+    "@babel/register": "^7.6.2",
     "babel-loader": "^8.0.6"
   },
   "dependencies": {},
