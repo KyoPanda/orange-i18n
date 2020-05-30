@@ -32,7 +32,7 @@
   "homepage": "https://github.com/KyoPanda/orange-i18n#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-env": "^7.10.2",
     "@babel/register": "^7.7.7",
     "@commitlint/cli": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.4",
